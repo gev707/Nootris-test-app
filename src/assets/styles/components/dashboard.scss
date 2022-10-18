@@ -1,0 +1,127 @@
+.dashboard {
+  width: $mainContainerWidth;
+  height: 872px;
+  background: $gold;
+  position: relative;
+  &__vectors {
+    width: 100%;
+    height: 100%;
+    .v {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      opacity: 0.5;
+    }
+    .v-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+    }
+    .v-2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      opacity: 0.5;
+    }
+    .v-3 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+    }
+    .v-4 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      opacity: 0.5;
+    }
+    .v-5 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      opacity: 0.5;
+    }
+    .v-6 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    .v-7 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+    }
+  }
+  &__content {
+    width: $mainContainerWidth;
+    margin-top: 80px;
+    display: $flex;
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    top: 0;
+    &--info {
+      display: $flex;
+      flex-direction: column;
+      flex: 1;
+      width: 1008px;
+      padding-left: 64px;
+      margin-top: 96px;
+      position: absolute;
+      z-index: 1;
+      p:first-child {
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 152px;
+        color: $white;
+      }
+      p:nth-child(2) {
+        font-size: 24px;
+        line-height: 28px;
+        color: $black;
+        width: 672px;
+        margin-top: 24px;
+      }
+      p:nth-child(3) {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        color: $black;
+        margin-top: 120px;
+      }
+      p:last-child {
+        font-size: 18px;
+        line-height: 21px;
+        color: $black;
+        margin-top: 16px;
+        width: 416px;
+      }
+    }
+    &--view {
+      position: relative;
+      flex: 1;
+      img {
+        position: absolute;
+        z-index: 1;
+      }
+      img:first-child {
+        z-index: 0;
+        right: 60px;
+        top: 265px;
+      }
+      img:nth-child(2) {
+        top: 60px;
+        right: 160px;
+      }
+      img:last-child {
+        z-index: 2;
+        right: 245px;
+        top: 440px;
+      }
+    }
+  }
+}

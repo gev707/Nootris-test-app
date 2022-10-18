@@ -1,0 +1,16 @@
+.nav {
+  &__items {
+    display: $flex;
+    gap: 40px;
+    &--item {
+      font-size: 18px;
+      line-height: 24px;
+      color: $white;
+      white-space: nowrap;
+      &:hover {
+        transition: 0.3s ease-in-out;
+        color: $orange;
+      }
+    }
+  }
+}

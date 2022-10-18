@@ -1,0 +1,64 @@
+.product {
+  width: 100vw;
+  height: 100%;
+  padding: 0 64px;
+  text-align: center;
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+  }
+  &__title {
+    margin-top: 112px;
+    color: $white;
+  }
+  &__info {
+    color: $orange;
+  }
+  &__prices {
+    @include d-flex-center($flex,$justifyContentCenter,$alignItemsCenter);
+    margin-top: 85px;
+    gap: 32px;
+
+    p:first-child {
+      font-size: 36px;
+      line-height: 43px;
+      text-decoration: line-through;
+      color: $dark;
+    }
+    p:last-child {
+      font-size: 48px;
+      line-height: 57px;
+      color: $white;
+    }
+  }
+  &__items {
+    display: $flex;
+    margin-bottom: 64px;
+    &--item {
+      margin-top: 59px;
+      flex: 1;
+      .info {
+        p {
+          font-size: 18px;
+          line-height: 21px;
+        }
+        p:first-child {
+          margin-top: 78px;
+        }
+        p:last-child {
+          color: $orange;
+          text-decoration: underline;
+          margin: 0 auto;
+        }
+      }
+      .nootris-info {
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

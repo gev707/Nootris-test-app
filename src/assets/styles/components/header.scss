@@ -1,0 +1,31 @@
+.header {
+  width: $mainContainerWidth;
+  height: 80px;
+  @include d-flex-center($flex,$justifyContentCenter,$alignItemsCenter);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1111;
+  background: $mainBgColor;
+  &__wrapper {
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 80px;
+    @include d-flex-between($flex,$justifyContentBetween,$alignItemsCenter);
+    .basket {
+      position: relative;
+      .circule {
+        position: absolute;
+        bottom: 0;
+        right: -6px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $orange;
+        font-size: 12px;
+        color: $black;
+        @include d-flex-center($flex,$justifyContentCenter,$alignItemsCenter);
+      }
+    }
+  }
+}
